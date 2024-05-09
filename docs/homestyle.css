@@ -1,0 +1,220 @@
+/*background and font for whole page*/
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    background-image: url('');
+    font-size: 20px;
+
+}
+
+/*heading margin width, font size, colour of text and background and word spacing*/
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0;
+    font-size: 60px;
+    color: #faf9f6;
+    word-spacing: 1px;
+}
+.headerborder {
+    background-color: 	#ACE1AF;
+    margin-top: 1%;
+}
+
+.header_image {
+    display: flex;
+}
+
+.header_image img {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+/* chat gpt */
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.options label {
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+
+img {
+    max-width: 50%;
+    height: auto;
+    float: left;
+
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+}
+.quiz-item {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+/* .container {
+    max-width: 50%; /* Limits image width to half of the page */
+  /* } */
+
+
+  input[type="radio"]:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Style for selected button */
+input[type="radio"]:checked + label {
+    background-color: #007bff; /* Change this to desired color */
+    color: white; /* Text color */
+  }
+
+label {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  /* Change cursor on hover */
+label:hover {
+    cursor: pointer;
+  }
+
+  /* Style for result text */
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .stepcontent {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .text1 {
+    flex: 33%;
+    color:rgb(201, 201, 201);
+    
+  }
+  .text2 {
+    flex: 33%;
+    color:rgb(201, 201, 201);
+  }
+.step
+
+  #scrolly {
+    position: relative;
+}
+.step.is-active .text1 {
+    color:rgb(11, 11, 11);
+}
+.step.is-active .text2 {
+    color:rgb(11, 11, 11);
+}
+article {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 0px;
+}
+
+.step {
+    margin: 2rem auto 4rem auto;
+    background-color: #ffffff;
+
+}
+
+.step.is-active {
+    background-color: rgb(255, 255, 255);
+    color: #3b3b3b;
+}
+
+.step p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.step.step.is-active .centrecontent {
+    background-color: rgb(190, 255, 200);
+    color: rgb(0, 0, 0);
+}
+
