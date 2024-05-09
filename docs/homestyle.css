@@ -164,6 +164,7 @@ label:hover {
     margin-top: 0px;
     display: flex;
     flex-direction: row;
+    max-width: 50%;
   }
 
 
