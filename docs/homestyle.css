@@ -1,16 +1,23 @@
-/*background and font for whole page*/
+
 body{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    background-image: url('');
-    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f1da0d;
+    font-size: 25px;
+
+    /* Gradient definition */
+    background: linear-gradient(135deg, #ffffff, #faf3d1);
+
+    /* Ensure the gradient covers the entire page */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 
 }
 
 /*heading margin width, font size, colour of text and background and word spacing*/
 .header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif;
     margin-top: 0;
     font-size: 60px;
     color: #faf9f6;
@@ -96,10 +103,9 @@ input[type="submit"]:hover {
 
 
 img {
-    max-width: 50%;
+    max-width: 90%;
     height: auto;
-    float: left;
-
+    float: center;
 }
 .container {
     max-width: 600px;
@@ -129,9 +135,6 @@ input[type="radio"] {
     background-color: #f0f0f0;
     border-radius: 5px;
 }
-/* .container {
-    max-width: 50%; /* Limits image width to half of the page */
-  /* } */
 
 
   input[type="radio"]:hover {
@@ -140,7 +143,7 @@ input[type="radio"] {
 
   /* Style for selected button */
 input[type="radio"]:checked + label {
-    background-color: #007bff; /* Change this to desired color */
+    background-color: #007bff; 
     color: white; /* Text color */
   }
 
@@ -164,7 +167,7 @@ label:hover {
     margin-top: 0px;
     display: flex;
     flex-direction: row;
-    max-width: 50%;
+    font-size: 15px;
   }
 
 
@@ -172,11 +175,13 @@ label:hover {
   .text1 {
     flex: 33%;
     color:rgb(201, 201, 201);
+    font-size: 15px;
     
   }
   .text2 {
     flex: 33%;
     color:rgb(201, 201, 201);
+    font-size: 15px;
   }
 .step
 
@@ -199,23 +204,41 @@ article {
 
 .step {
     margin: 2rem auto 4rem auto;
-    background-color: #ffffff;
+    background-color: #f6f5f2;
+    font-size: 15px;
 
 }
 
 .step.is-active {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(239, 202, 18);
     color: #3b3b3b;
 }
 
 .step p {
     text-align: center;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
 .step.step.is-active .centrecontent {
-    background-color: rgb(190, 255, 200);
+    background-color: rgb(244, 197, 8);
     color: rgb(0, 0, 0);
 }
+.centrecontent {
+    flex: 50%;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%; 
+}
+
+/* Additional styles for circle */
+.circle {
+    border: 1px solid black;
+}
+
 
