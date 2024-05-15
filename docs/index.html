@@ -115,9 +115,6 @@
 				<div class="step" data-step="5">
 					<p>Is it the end for animal-based milk?</p>
 				</div>
-				<div class="step" data-step="6">
-					<p>How are dairy producers responding?</p>
-				</div>
 				<div class="step" data-step="7">
 					<p>What is the general sentiment within dairy farmers?</p>
 				</div>
@@ -150,8 +147,9 @@
 
 		<section id="outro">
 				
-			<a href="home.html">How well do you think you know your milk then?</a>	
+			<a href="home.html">How well do you think you know your milk then?</a>
 		</section>
+			<p class="credit">Photo courtesy of <a href="https://beachpackagingdesign.com/boxvox/intersecting-milk-cartons">Beach Packaging Design</a></p>
 
 	</main>
 
@@ -166,20 +164,19 @@
 		var step = article.selectAll(".step");
 
 		let content = [
-			'<section id="paragraph"> Retail sales data from Nielson IQ showed turnover for plant-based milk between 2021 and 2022 peaked at £276 million (up 6%). </section>',
-			'<section id="paragraph"> Data from the Department for Environment, Food & Rural Affairs had shown milk making up over a third of livestock output of £5.7 billion within the same period, at approximately £2 billion - up 12.9%. </section>',
-			'<section id="paragraph"> The UK has the second-highest plant-based food sales within Europe while <br><br> Britons rank the fifth globally in plant-based food spent per person. </section>',
+			'<section id="paragraph"> Retail sales data from <a href="https://nielseniq.com/global/en/insights/education/2023/alternative-milk-trends/">Nielson IQ</a> showed turnover for plant-based milk between 2021 and 2022 peaked at £276 million (up 6%). </section>',
+			'<section id="paragraph"> <a href="https://www.gov.uk/government/statistics/total-income-from-farming-in-england/total-income-from-farming-in-england-in-2022#section-2-outputs-and-subsidies">Data</a> from the Department for Environment, Food & Rural Affairs had shown milk making up over a third of livestock output of £5.7 billion within the same period, at approximately £2 billion - up 12.9%. </section>',
+			'<section id="paragraph"> The UK has the <a href="https://www.statista.com/forecasts/758714/per-capita-volume-sales-in-the-milk-products-market-worldwide-by-country">second-highest</a> plant-based food sales within Europe while <br><br> Britons rank the fifth globally in plant-based food spent per person. </section>',
 			'<section id="paragraph"> One UK supermarket (Waitrose) stated that 2018 was the year of the "rise of meat free", with dairy milk alternatives such as oat, coconut and almond taking supermarket shelves up 116%, 60% and 26% respectively that year. Tesco was one of the first supermarkets to launch its own vegan range: Wicked Kitchen hit its 600 stores the same year.</section>',
 			'<section id="paragraph"> UK sales of meat-free products are expected to exceed £1.1 billion by the end of 2024 but popular plant-based brands reportedly took their products off the shelves as consumers chose cheaper traditional meat and dairy in response to the cost of living crisis.</section>',
 			'<section id="paragraph"> Animal-based milk is still conforming to the steady upward trend in global cow milk production from 2015 to 2023, currently at 550 million metric tons, with the UK being the eighth largest producer at 15 million metric tons. </section>',
-			'<section id="paragraph"> <a href="https://www.independent.co.uk/news/uk/home-news/the-controversial-megadairies-that-alarm-campaigners-and-divide-a-struggling-sector-of-british-agriculture-a6744511.html">The Independent</a> reported that producers across Britain are venturing towards diversification amidst this shift - 32 per cent of those polled now drink milk made from either soy, oats, almond or rice – up from 25 per cent in 2020. </section>',
 			'<section id="paragraph"> Even though revenues are increasing, farmers have been out protesting twice within the first quarter of 2024. UK farmers state there will be further French-style blockades.</section>',
-			'<section id="paragraph"> Low supermarket prices and cheap food imports from post-Brexit trade deals have left British farmers on a meagre margin - Agriculture and Horticulture Development Board reported that only three farms in the group had a positive net margin in 2020 and UK farms around lost 3.8 pence per litre.</section>',
+			'<section id="paragraph"> Low supermarket prices and cheap food imports from post-Brexit trade deals have left British farmers on a <a href="https://www.independent.co.uk/news/uk/home-news/the-controversial-megadairies-that-alarm-campaigners-and-divide-a-struggling-sector-of-british-agriculture-a6744511.html">meagre margin</a> - <a href="https://ahdb.org.uk/news/uk-dairy-farm-remains-middle-of-pack-for-profit">Agriculture and Horticulture Development Board</a> reported that only three farms in the group had a positive net margin in 2020 and UK farms around lost 3.8 pence per litre.</section>',
 			'<section id="paragraph"> The rise behind the popularity of oat milk can be traced to a few aspects: climate change, health, and concerns over the treatment of animals.</section>',
 			'<section id="paragraph"> People for Ethical Treatment of Animals (PETA) claims that at least 4% of the world’s total greenhouse gas emissions can be traced back to dairy farming.</section>',
 			'<section id="paragraph"> Environment Agency said 69% of 2475 dairy farms in England failed to meet water protection standards between 2020 and 2021. This resulted in nearby rivers getting polluted. </section>',
-			'<section id="paragraph"> According to Origin Coffee Roasters, up to 30% of their customers prefer oat milk in their hot drinks across their six cafes in London and Cornwall, signalling a sizeable majority still favouring dairy.',
-			'<img id="photo" src="https://i.guim.co.uk/img/media/36ada025cdaab402a867a454a067444a9162b575/0_64_1195_717/master/1195.jpg?width=1300&dpr=2&s=none">',
+			'<section id="paragraph"> According to <a href="https://www.origincoffee.co.uk/blogs/journal/oat-milk-vs-cow-milk">Origin Coffee Roasters</a>, up to 30% of their customers prefer oat milk in their hot drinks across their six cafes in London and Cornwall, signalling a sizeable majority still favouring dairy.',
+			'<a href="https://www.bbc.co.uk/news/business-60128075"><figure><img id="photo" src="https://i.guim.co.uk/img/media/36ada025cdaab402a867a454a067444a9162b575/0_64_1195_717/master/1195.jpg?width=1300&dpr=2&s=none"><figcaption>Oatly was under fire after a misleading claim on its product amidst its 2021 marketing campaign.</figure></a>',
 			'<img id="photo" src="investment.png">',
 			'<img id="photo" src="rise.png">'
 		]
