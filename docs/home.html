@@ -119,10 +119,10 @@
     </head>
     <body>
     <div class="header_image">
-        <img id="milk1" src="cover.jpeg">
-        <img id="milk1" src="cover.jpeg">
         <img id="milk1" src="cover.jpeg">        
     </div>
+    <div class="captionheaderimage" style="font-size: 15px; margin-bottom: 100px;">
+        <figcaption>This image was created using genAI by Dr Martin Chorley.</figcaption></div>
 
     <div class="container">
         <form id="quizForm">
@@ -210,7 +210,7 @@
                 <div class="step" data-step="1">
                     <div class="stepcontent">
                         <div class ='text1'>
-                            <p>Cow’s milk is the cheaper option and looks as if it will continue to be; the price of cows milk has in fact decreased with it being 5p less expensive per pint since Feburary 2023.</p>
+                            <p>Cow’s milk is the cheaper option and looks as if it will continue to be; the price of cow's milk has in fact decreased with it being 5p less expensive per pint since Feburary 2023.</p>
                         </div>
                         <div class="centrecontent">
                             <iframe src='https://flo.uri.sh/visualisation/17896850/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/17896850/?utm_source=embed&utm_campaign=visualisation/17896850' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:905px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>                        </div>
@@ -231,7 +231,7 @@
                         <amp-iframe sandbox='allow-scripts allow-same-origin allow-forms allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation' layout=responsive resizable noloading title='Interactive or visual content' src='https://flo.uri.sh/visualisation/17685760/embed?auto=1' width=400 height=300></amp-iframe>
                         <iframe src='https://flo.uri.sh/visualisation/17685760/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:1000%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/17685760/?utm_source=embed&utm_campaign=visualisation/17685760' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:1005px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>                    </div>
                     <div class ='text2'>
-                        <p>Our research revealed Alpro to be the most popular alternate milk brand. Although their Oat Original drink is less nutritious than cow’s, it is low in calories. 
+                        <p>Our research revealed Alpro to be the most popular alternate milk brand. Although their Oat Original drink is less nutritious than cow’s milk, it is low in calories. 
                             Oat milk contains stabilisers and do not contain as natural micronutrients, unlike cow’s milk. 
                         </p>
                     </div>
@@ -244,8 +244,6 @@
                         </div>
                         <div class="centrecontent">
                         <img src='milk.png' width='1000' height='1000'>        
-                        <!-- <figcaption>Milk is an emulsion which means it is a colloidal dispersion of different micro and macro nutrients in water. 
-                        </figcaption> -->
                         <br><br>
                         </div>
                         <div class ='text2'>
@@ -275,7 +273,7 @@
                 <div class="step" data-step="5">
                     <div class="stepcontent">
                         <div class ='text1'>
-                            <p>One of the leading environmental concerns with cows milk is how much water the production of it uses. This is almost double as much as any plant-based alternative.</p>
+                            <p>One of the leading environmental concerns with cow’s milk is how much water the production of it uses. This is almost double as much as any plant-based alternative.</p>
                         </div>
                         <div class="centrecontent">
                         <p><iframe src='https://flo.uri.sh/visualisation/17583954/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/17583954/?utm_source=embed&utm_campaign=visualisation/17583954' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:1000px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div></p>
@@ -396,9 +394,7 @@
             
             <div class="captionHaversine" style="font-size: 15px; margin-bottom: 100px;">
                 <figcaption>The estimates use Haversine formula. The formula essentially takes two coordinates, each coordinate is an array of latitudes and longitudes. It then takes into account the distance to the target location from the source of plantation and calculates the carbon footprint based on the form of transportation i.e. via road using freight trucks or via shipping.</figcaption></div>
-                
-        
-            <div id="legend">
+             <div id="legend">
                 <div class="legend-item">
                     <span class="legend-color circle" style="background-color: green;"></span>
                     Oat Farms
@@ -513,13 +509,12 @@
                     `<h2>Oat farm in Lahti, Finland</h2>
                      <p>Distance from Lahti, Finland to the UK: ${distance1.toFixed(2)} km</p>
                      <p>Carbon footprint left behind: ${carbonFootprint1.toFixed(2)} kg Co2</p>
-                     <img src="oatleyFinland.jpeg" alt="Oat farm in Sweden" style="max-width: 100%; height: auto;">`
+                     `
                 );
                 const popup2 = new mapboxgl.Popup({ offset: 25 }).setHTML(
                     `<h2>Oat farm in Lidköping, Sweden</h2>
                      <p>Distance from Lidköping, Sweden to the UK: ${distance2.toFixed(2)} km</p>
                      <p>Carbon footprint left behind: ${carbonFootprint2.toFixed(2)} kg Co2</p>
-                     <img src="oatfarmsweden.png" alt="Oat farm in Sweden" style="max-width: 100%; height: auto;">
                      `
                 );
         
@@ -527,7 +522,6 @@
                     `<h2>Almond farm in Valle del Jalón, Spain</h2>
                      <p>Distance from Andalusia, Spain to the UK: ${distance3.toFixed(2)} km</p>
                      <p>Carbon footprint left behind: ${carbonFootprint3.toFixed(2)} kg Co2</p>
-                     <img src="jalon.jpeg" alt="Almond farm in Spain" style="max-width: 100%; height: auto;">
                      `
                 );
         
@@ -535,24 +529,23 @@
                     `<h2>Almond farm in Andalusia, Spain</h2>
                      <p>Distance from Andalusia, Spain to the UK: ${distance4.toFixed(2)} km</p>
                      <p>Carbon footprint left behind: ${carbonFootprint4.toFixed(2)} kg Co2</p>
-                     <img src="AlmondsAndalusia.jpeg" alt="Almond farm in Spain" style="max-width: 100%; height: auto;">
                      `
                 );
         
                 
         
                 const popup6 = new mapboxgl.Popup({ offset: 25}).setHTML(
-                    `<h2>Mazowieckie Voivodeship</h2>
+                    `<h2>Oat farms in Mazowieckie Voivodeship, Poland</h2>
                     <p>Distance from Mazowieckie Voivodeship to the UK: ${distance6.toFixed(2)} km</p>
                     <p>Carbon footprint left behind: ${carbonFootprint6.toFixed(2)} kg Co2</p>
-                    <img src="mazowiech.jpeg" alt="Oat farms in Mazowieckie Voivodeship" style="max-width: 100%; height: auto;">`
+                    `
                 )
         
                 const popup7 = new mapboxgl.Popup({ offset: 25}).setHTML(
-                    `<h2>Oat farms in Mainburg, Bavaria</h2>
+                    `<h2>Oat farms in Mainburg, Bavaria, Germany</h2>
                     <p>Distance from Mainburg to the UK: ${distance7.toFixed(2)} km</p>
                     <p>Carbon footprint left behind: ${carbonFootprint7.toFixed(2)} kg Co2</p>
-                    <img src="bavaria.jpeg" alt="Oat farms in Mainburg, Bavaria" style="max-width: 100%; height: auto;">`
+                    `
         
                 )
         
@@ -560,21 +553,21 @@
                     `<h2>Almond farms in Apulia (Puglia), Italy</h2>
                     <p>Distance from Apulia to the UK: ${distance8.toFixed(2)} km</p>
                     <p>Carbon footprint left behind: ${carbonFootprint8.toFixed(2)} kg Co2</p>
-                    <img src="/Users/navneetvyasan/Desktop/working/docs/ Apulia (Puglia).jpeg" alt="Almond farms in  Apulia (Puglia)" style="max-width: 100%; height: auto;">`
+                    `
                 )
         
                 const popup9 = new mapboxgl.Popup({ offset: 25}).setHTML(
                     `<h2>Almond farms in Trás-os-Montes, Portugal</h2>
                         <p>Distance from Trás-os to the UK: ${distance9.toFixed(2)} km</p>
                         <p>Carbon footprint left behind: ${carbonFootprint9.toFixed(2)} kg Co2</p>
-                        <img src= "/Users/navneetvyasan/Desktop/working/docs/portugal.jpeg" alt="Almond farms in Portugal" style= "max-width: 100%; height: auto;"> `
+                         `
                 )
         
                 const popup10 = new mapboxgl.Popup({ offset: 25}).setHTML(
                     `<h2>Almond farms in Euboea, Greece</h2>
                     <p>Distance from Euboea to the UK: ${distance10.toFixed(2)} km</p>
                     <p>Carbon footpring left behind: ${carbonFootprint10.toFixed(2)} kg Co2</p>
-                    <img src="/Users/navneetvyasan/Desktop/working/docs/greece.jpeg" alt="Almond farms in Greece" style= "max-width: 100%; height: auto;"> `
+                    `
                 )
         
                 // Popup markers
@@ -652,22 +645,22 @@
     
                     switch (selectedFactor) {
                         case 'environmentally friendly':
-                            resultText = 'According to various sources, the production of plant based milk, specifically oat milk has a lower carbon footprint than cows milk. However, these sources do not take into account how far the oat milk has travelled to supermarket shelves. Overall the packaging is different but more often than not are both recylable and although the distance an oat travels to come to you as oat milk is significantly larger, this is the more environmentally sustainable option.';
+                            resultText = 'The production of plant based milk, specifically oat milk, has a lower carbon footprint than cow’s milk. However, these sources do not take into account how far the oat milk has travelled to supermarket shelves. Overall, the packaging is different but more often than not, are recylable. Although the distance an oat travels to come to you as oat milk is significantly larger, this is the more environmentally sustainable option.';
                             break;
                         case 'ethical':
-                            resultText = 'One concern when looking at which type of milk is more ethical is the treatment of livestock. Sometimes cow’s milk can be a concern for animal welfare. Some people argue that cows have to give birth to be able to produce milk and occasionally, if the calves are not needed for more milk they might be killed. If this is a concern for you, your best option would be plant based milk.';
+                            resultText = 'One concern when considering types of milk is the treatment of livestock. Sometimes, cow’s milk can be a concern for animal welfare. Some people argue that cows have to give birth to be able to produce milk and occasionally, if the calves are not needed for more milk they might be killed. If this is a concern for you, your best option would be plant based milk.';
                             break;
                         case 'low calorie/fat':
-                            resultText = 'If you are looking for a lower calorie or low fat option then oat milk would be the best choice for you. With less than half the fat of cows milk as well as about two thirds the number of calories. ';
+                            resultText = 'If you are looking for a lower calorie or low fat option, then oat milk would be the best choice for you. With less than half the fat of cow’s milk as well as about two thirds the number of calories. ';
                             break;
                         case 'high nutritional value':
-                            resultText = 'Cows milk has much more nutritional value than plant based milk. The percentage of fat and protien are much higher.';
+                            resultText = 'Cow’s milk has much more nutritional value than plant based milk. The percentage of fat and protien are much higher.';
                             break;
                         case 'minimal additives':
-                            resultText = 'Cows milk has a larger amount of fat and protein than oat milk with no additives meaning that it is more full of the macro and micronutrients that are needed for a healthy, balanced diet. With oat milk there are stabilisers and vitamins added to the original oat and water mixture.';
+                            resultText = 'Cow’s milk has a larger amount of fat and protein than oat milk with no additives. This means that it is more rich in macro and micronutrients that are needed for a healthy, balanced diet. With oat milk, there are stabilisers and vitamins added to the original oat and water mixture.';
                             break;
                         case 'less expensive':
-                            resultText = 'If you are looking for the cheaper option, cows milk will be the best choice. If you were to only buy cows milk instead of oat milk and you bought 1 litre of milk per week for a year you would save £33.28. ';
+                            resultText = 'If you are looking for the cheaper option, cow’s milk will be the best choice. If you were to only buy cow’s milk instead of oat milk and you bought 1 litre of milk per week for a year, you would save £33.28. ';
                             break;
                         default:
                             resultText = 'Please select a factor.';
